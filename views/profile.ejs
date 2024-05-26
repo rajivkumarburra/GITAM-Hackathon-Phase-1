@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G-Fest</title>
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/profile.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="navbar">
+        <h1 class="logo">G-Fest</h1>
+        <div class="menu-elements">
+            <a href="/home">Home</a>
+            <a href="/history">History</a>
+            <a href="/profile" class="active">Profile</a>
+        </div>
+        <div class="sidebar-icon" onclick="toggleSidebar()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <div class="sidebar">
+            <a href="/home">Home</a>
+            <a href="/history">History</a>
+            <a href="/profile" class="active">Profile</a>
+        </div>
+    </div>
+    <h2 class="pro">Profile</h2>
+    <div id="profile">
+        <img src="img/465AC8F6-B5E5-4C65-9958-A9856079E9E3_1_201_a.jpeg" alt="Profile Image">
+        <h2>Nithin Choudary</h2>
+        <p>Date of Birth: 01/01/1990</p>
+        <p>Email: user@example.com</p>
+        <button id="signout-button">Sign Out</button>
+    </div>
+    <div id="pfledit">
+        <h2>Edit Profile</h2>
+        <form action="profile.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" placeholder="Name" required>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" name="dob" id="dob" required>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="Email" required>
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" placeholder="Password" required>
+            <input type="submit" value="Save">
+        </form>
+    </div>
+    <script>
+        function toggleSidebar() {
+            document.querySelector(".sidebar").classList.toggle("active");
+        }
+        document.getElementById('signout-button').addEventListener('click', function () {
+            window.location.href = 'index.html';
+        });
+
+        document.getElementById('signout-button').addEventListener('click', function () {
+            window.location.href = '/logout';
+        });
+
+    </script>
+</body>
+
+</html>

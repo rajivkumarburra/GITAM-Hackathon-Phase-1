@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G-Fest</title>
+    <link rel="stylesheet" href="css/event.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="navbar">
+        <img class="logo" src="img/FestifyU-2.png" alt="logo">
+        <div class="menu-elements">
+            <a href="/home" class="active">Home</a>
+            <a href="/history">History</a>
+            <a href="/profile">Profile</a>
+        </div>
+        <div class="sidebar-icon" onclick="toggleSidebar()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <div class="sidebar">
+            <a href="/home" class="active">Home</a>
+            <a href="/history">History</a>
+            <a href="/profile">Profile</a>
+        </div>
+    </div>
+    
+    <div class="event-details">
+        <img src="img/p2.jpeg" alt="event1" class="event-image">
+        <h1>Event 1</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur quis repellat, maiores voluptate aliquid hic fugit atque! Blanditiis necessitatibus maiores sint rem earum, reiciendis voluptatum, corporis veritatis veniam quasi iusto!</p>
+        <a href="#" class="btn">Buy Tickets</a>
+    </div>
+    <div class="footer">
+        <p>&copy; 2023 FestifyU. All rights reserved.</p>
+    </div>
+
+
+
+
+    <script>
+        function toggleSidebar() {
+            document.querySelector('.sidebar').classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>

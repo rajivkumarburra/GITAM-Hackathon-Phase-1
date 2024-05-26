@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G-Fest</title>
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="navbar">
+        <img class="logo" src="img/FestifyU-2.png" alt="logo">
+        <div class="menu-elements">
+            <a href="/home" class="active">Home</a>
+            <a href="/history">History</a>
+            <a href="/profile">Profile</a>
+        </div>
+        <div class="sidebar-icon" onclick="toggleSidebar()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <div class="sidebar">
+            <a href="/home" class="active">Home</a>
+            <a href="/history">History</a>
+            <a href="/profile">Profile</a>
+        </div>
+    </div>
+    <div id="welcome">
+        <p><span class="fancy">WELCOME.</span></p>
+        
+        
+    </div>
+    <p class="par1">Upcoming Events</p>
+    <div id="events">
+        <!-- cards -->
+        <div class="card-container">
+            <% events.forEach(element => { %>
+                <div class="card">
+                    <a href="/event"><img src="img/p2.jpeg" alt="p1"></a>
+                </div>
+           <% }); %>
+        </div>
+    </div>
+    
+    
+    
+
+    <script>
+        function toggleSidebar() {
+            document.querySelector('.sidebar').classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>

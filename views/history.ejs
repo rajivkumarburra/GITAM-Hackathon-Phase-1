@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G-Fest</title>
+    <link rel="stylesheet" href="css/history.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="navbar">
+        <h1 class="logo">G-Fest</h1>
+        <div class="menu-elements">
+            <a href="/home">Home</a>
+            <a href="/history" class="active">History</a>
+            <a href="/profile">Profile</a>
+        </div>
+        <div class="sidebar-icon" onclick="toggleSidebar()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <div class="sidebar">
+            <a href="/home" class="active">Home</a>
+            <a href="/history">History</a>
+            <a href="/profile">Profile</a>
+        </div>
+    </div>
+    <div id="order-history">
+        <p><span class="fancy">Order History.</span></p>
+    </div>
+    
+    <!-- -----history----- -->
+    <div id="history">
+        <div class="your-history">
+            <p>Your History</p>
+        </div>
+
+        <div class="history-item-container">
+            <div class="history-item">
+                <div class="history-item-image">
+                    <img src="img/MV5BZjkwN2Q5Y2QtMmE2MC00NzlkLTg2NzQtYjVjYjVmNjE2ZTNiXkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_.jpg" alt="">
+                </div>
+                <div class="history-item-detail">
+                    <p><%= person.name%></p>
+                    <p><%= person.age%></p>
+                    <p>12/12/2021</p>
+                </div>
+                <div class="history-item-qr">
+                    <img class="himg" src="img/Symbology-QR-code.svg" alt="QR Code">
+                </div>
+            </div>
+            <div class="history-item">
+                <div class="history-item-image">
+                    <img src="img/MV5BZjkwN2Q5Y2QtMmE2MC00NzlkLTg2NzQtYjVjYjVmNjE2ZTNiXkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_.jpg" alt="">
+                </div>
+                <div class="history-item-detail">
+                    <p>Fighter</p>
+                    <p>₹ 200.00</p>
+                    <p>12/12/2021</p>
+                </div>
+                <div class="history-item-qr">
+                    <img class="himg" src="img/Symbology-QR-code.svg" alt="QR Code">
+                </div>
+            </div>
+            <div class="history-item">
+                <div class="history-item-image">
+                    <img src="img/MV5BZjkwN2Q5Y2QtMmE2MC00NzlkLTg2NzQtYjVjYjVmNjE2ZTNiXkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_.jpg" alt="">
+                </div>
+                <div class="history-item-detail">
+                    <p>Fighter</p>
+                    <p>₹ 200.00</p>
+                    <p>12/12/2021</p>
+                </div>
+                <div class="history-item-qr">
+                    <img class="himg" src="img/Symbology-QR-code.svg" alt="QR Code">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <script>
+        function toggleSidebar() {
+            document.querySelector('.sidebar').classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>
